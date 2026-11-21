@@ -1,5 +1,11 @@
 # ccrcc_svm_model
 
+A Support Vector Machine (SVM) model designed to classify kidney tissue samples as either cancerous (clear cell renal cell carcinoma, ccRCC) or normal based on the expression level of the microRNA hsa-let-7b.
+
+The model uses a single input value representing let-7b expression, measured in reads per million miRNA mapped (RPM), and predicts whether the sample is Cancer or Normal, along with the corresponding prediction probability.
+
+The dataset is sourced from the TCGA-KIRC (Kidney Renal Clear Cell Carcinoma) project and was obtained through the [NCI Genomic Data Commons (GDC) portal](https://portal.gdc.cancer.gov/). NCI Genomic Data Commons (GDC) portal(https://portal.gdc.cancer.gov/).
+
 A Support Vector Machine (SVM) classifier that predicts whether a kidney tissue sample is **cancerous (clear cell renal cell carcinoma, ccRCC)** or **normal**, using the expression level of the microRNA **hsa-let-7b**.
 
 The model takes a single number, the let-7b expression in **reads per million miRNA mapped (RPM)**, and returns a *Cancer* / *Normal* prediction with a probability.
